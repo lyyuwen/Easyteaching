@@ -1,0 +1,44 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "First_Page",
+      "value": "FirstPage"
+    },
+    {
+      "name": "Operation_Page",
+      "value": "OperationPage"
+    },
+    {
+      "name": "History_Page",
+      "value": "HistoryPage"
+    },
+    {
+      "name": "Mine_Page",
+      "value": "MinePage"
+    },
+    {
+      "name": "entry_MainAbility_operation",
+      "value": "entry_MainAbility_operation"
+    },
+    {
+      "name": "mainability_operation_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_operation_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "Students_Situation",
+      "value": "Student situation"
+    }
+  ]
+}
