@@ -1,0 +1,56 @@
+{
+  "app": {
+    "bundleName": "com.application.easyteaching",
+    "vendor": "application",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.application.easyteaching",
+    "name": ".MyApplication",
+    "mainAbility": "com.application.easyteaching.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "visible": true,
+        "name": "com.application.easyteaching.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.application.easyteaching.slice.MainAbility_operation",
+        "icon": "$media:icon",
+        "description": "$string:mainability_operation_description",
+        "label": "$string:entry_MainAbility_operation",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

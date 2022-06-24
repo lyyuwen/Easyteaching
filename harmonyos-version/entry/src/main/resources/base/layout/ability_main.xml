@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:height="80vp"
+        ohos:width="160vp"
+        ohos:text="$string:Students_Situation"
+        />
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:alignment="bottom|horizontal_center"
+        ohos:orientation="horizontal">
+
+        <Button
+            ohos:id="$+id:first_page"
+            ohos:height="50vp"
+            ohos:width="50vp"
+            ohos:text="$string:First_Page"
+            ohos:text_size="20vp"
+            ohos:background_element="$graphic:background_ability_main_model"
+            />
+
+        <Button
+            ohos:id="$+id:operation_page"
+            ohos:height="50vp"
+            ohos:width="50vp"
+            ohos:text="$string:Operation_Page"
+            ohos:text_size="20vp"
+            ohos:background_element="$graphic:background_ability_main_model"
+            />
+
+        <Button
+            ohos:id="$+id:history_page"
+            ohos:height="50vp"
+            ohos:width="50vp"
+            ohos:text="$string:History_Page"
+            ohos:text_size="20vp"
+            ohos:background_element="$graphic:background_ability_main_model"
+            />
+
+        <Button
+            ohos:id="$+id:mine_page"
+            ohos:height="50vp"
+            ohos:width="50vp"
+            ohos:text="$string:Mine_Page"
+            ohos:text_size="20vp"
+            ohos:background_element="$graphic:background_ability_main_model"
+            />
+
+    </DirectionalLayout>
+
+</DirectionalLayout>
