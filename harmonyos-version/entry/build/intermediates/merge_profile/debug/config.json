@@ -1,0 +1,65 @@
+{
+    "app": {
+        "bundleName": "com.application.easyteaching",
+        "vendor": "application",
+        "apiVersion": {
+            "compatible": 7,
+            "target": 7,
+            "releaseType": "Beta2"
+        },
+        "version": {
+            "code": 1000000,
+            "name": "1.0.0"
+        }
+    },
+    "deviceConfig": {
+        
+    },
+    "module": {
+        "name": ".MyApplication",
+        "deviceType": [
+            "phone"
+        ],
+        "distro": {
+            "deliveryWithInstall": true,
+            "moduleName": "entry",
+            "moduleType": "entry",
+            "installationFree": false
+        },
+        "abilities": [
+            {
+                "name": "com.application.easyteaching.MainAbility",
+                "description": "$string:mainability_description",
+                "icon": "$media:icon",
+                "label": "$string:entry_MainAbility",
+                "type": "page",
+                "launchType": "standard",
+                "orientation": "unspecified",
+                "visible": true,
+                "skills": [
+                    {
+                        "actions": [
+                            "action.system.home"
+                        ],
+                        "entities": [
+                            "entity.system.home"
+                        ]
+                    }
+                ],
+                "homeAbility": true
+            },
+            {
+                "name": "com.application.easyteaching.slice.MainAbility_operation",
+                "description": "$string:mainability_operation_description",
+                "icon": "$media:icon",
+                "label": "$string:entry_MainAbility_operation",
+                "type": "page",
+                "launchType": "standard",
+                "orientation": "unspecified",
+                "homeAbility": false
+            }
+        ],
+        "mainAbility": "com.application.easyteaching.MainAbility",
+        "package": "com.application.easyteaching"
+    }
+}

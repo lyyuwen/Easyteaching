@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Mainoperation</class>
+ <widget class="QMainWindow" name="Mainoperation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>幼圆</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>简·教·学</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(245, 246, 246);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="start_correct">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>460</y>
+      <width>251</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>30</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{ 
+    border-radius:250px;
+	background-color: rgb(123, 111, 255);
+}
+QPushButton:hover
+{
+	background-color: rgb(143, 141, 229);
+	background-color: rgb(127, 147, 249);
+	border-radius: 250px;
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>开始批改</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="upload_answer">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>370</y>
+      <width>251</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>30</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{ 
+    border-radius:250px;
+	background-color: rgb(123, 111, 255);
+}
+QPushButton:hover
+{
+	background-color: rgb(143, 141, 229);
+	background-color: rgb(127, 147, 249);
+	border-radius: 250px;
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>上传答案</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="handout">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>280</y>
+      <width>251</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>17</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{ 
+    border-radius:250px;
+	background-color: rgb(123, 111, 255);
+}
+QPushButton:hover
+{
+	background-color: rgb(143, 141, 229);
+	background-color: rgb(127, 147, 249);
+	border-radius: 250px;
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>布置作业/发布通知</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>280</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="correct_Layout">
+     <item>
+      <widget class="QLabel" name="correct_progress_labal">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>批改进度：</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QProgressBar" name="progressBar">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>-10</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>目前答案</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>50</y>
+      <width>101</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label1">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>关键词1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label2">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>关键词2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label3">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>关键词3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label4">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>关键词4</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label5">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>关键词5</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label6">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>关键词6</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>50</y>
+      <width>411</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_1">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="add_student">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>380</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{ 
+	border-radius:250px;
+    background-color: rgb(135, 203, 255);
+}
+QPushButton:hover
+{
+	background-color: rgb(135, 194, 227);
+	border-radius: 250px;
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>添加学生</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>330</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="student_Layout">
+     <item>
+      <widget class="QLabel" name="student_number">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>学生人数</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_student_number">
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="remove_student">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>380</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{ 
+	border-radius:250px;
+    background-color: rgb(135, 203, 255);
+}
+QPushButton:hover
+{
+	background-color: rgb(135, 194, 227);
+	border-radius: 250px;
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>删除学生</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="edit_student">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>420</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{ 
+	border-radius:250px;
+    background-color: rgb(135, 203, 255);
+}
+QPushButton:hover
+{
+	background-color: rgb(135, 194, 227);
+	border-radius: 250px;
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>修改学生</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="view_student">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>420</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{ 
+	border-radius:250px;
+    background-color: rgb(135, 203, 255);
+}
+QPushButton:hover
+{
+	background-color: rgb(135, 194, 227);
+	border-radius: 250px;
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>查看学生</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="all_push_work">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>470</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{ 
+	border-radius:250px;
+    background-color: rgb(135, 203, 255);
+}
+QPushButton:hover
+{
+	background-color: rgb(135, 194, 227);
+	border-radius: 250px;
+	
+}</string>
+    </property>
+    <property name="text">
+     <string>批量上传学生作业/试卷</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-20</y>
+      <width>200</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(58, 147, 249);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="mode_homepage">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>105</y>
+       <width>200</width>
+       <height>115</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>幼圆</family>
+       <pointsize>30</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{ 
+    background-color:transparent;
+}
+QPushButton:hover
+{
+	background-color: rgb(127, 147, 249);
+	border-radius: 0px;
+	
+}</string>
+     </property>
+     <property name="text">
+      <string>首页</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="mode_mine">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>450</y>
+       <width>200</width>
+       <height>115</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>幼圆</family>
+       <pointsize>30</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{ 
+    background-color:transparent;
+}
+QPushButton:hover
+{
+	background-color: rgb(127, 147, 249);
+	border-radius: 0px;
+	
+}</string>
+     </property>
+     <property name="text">
+      <string>我的</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="mode_history">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>335</y>
+       <width>200</width>
+       <height>115</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>幼圆</family>
+       <pointsize>25</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{ 
+    background-color:transparent;
+}
+QPushButton:hover
+{
+	background-color: rgb(127, 147, 249);
+	border-radius: 0px;
+	
+}</string>
+     </property>
+     <property name="text">
+      <string>历史
+记录</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="mode_operation">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>220</y>
+       <width>200</width>
+       <height>115</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>幼圆</family>
+       <pointsize>30</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{ 
+    background-color:transparent;
+}
+QPushButton:hover
+{
+	background-color: rgb(127, 147, 249);
+	border-radius: 0px;
+	
+}</string>
+     </property>
+     <property name="text">
+      <string>操作</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>200</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>华文行楷</family>
+       <pointsize>23</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>简·教·学</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
