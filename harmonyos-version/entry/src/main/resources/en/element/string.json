@@ -9,36 +9,104 @@
       "value": "Java_Empty Ability"
     },
     {
-      "name": "First_Page",
-      "value": "FirstPage"
-    },
-    {
-      "name": "Operation_Page",
-      "value": "OperationPage"
-    },
-    {
-      "name": "History_Page",
-      "value": "HistoryPage"
-    },
-    {
-      "name": "Mine_Page",
-      "value": "MinePage"
-    },
-    {
-      "name": "entry_MainAbility_operation",
-      "value": "entry_MainAbility_operation"
-    },
-    {
-      "name": "mainability_operation_description",
-      "value": "Java_Empty Ability"
-    },
-    {
-      "name": "mainability_operation_HelloWorld",
+      "name": "mainability_HelloWorld",
       "value": "Hello World"
     },
     {
-      "name": "Students_Situation",
-      "value": "Student situation"
+      "name": "welcome",
+      "value": "Hello Easyteaching"
+    },
+    {
+      "name": "first_page",
+      "value": "First"
+    },
+    {
+      "name": "operate_page",
+      "value": "Operate"
+    },
+    {
+      "name": "history_page",
+      "value": "History"
+    },
+    {
+      "name": "mine_page",
+      "value": "Mine"
+    },
+    {
+      "name": "add_student",
+      "value": "add"
+    },
+    {
+      "name": "del_student",
+      "value": "del"
+    },
+    {
+      "name": "edit_student",
+      "value": "edit"
+    },
+    {
+      "name": "view_student",
+      "value": "view"
+    },
+    {
+      "name": "tip_for_students_information_button",
+      "value": "students_information"
+    },
+    {
+      "name": "tip_for_work_button",
+      "value": "work"
+    },
+    {
+      "name": "give_out_work",
+      "value": "give out work"
+    },
+    {
+      "name": "upload_answers",
+      "value": "upload answers"
+    },
+    {
+      "name": "upload_work",
+      "value": "upload work"
+    },
+    {
+      "name": "edit_answers",
+      "value": "edit answers"
+    },
+    {
+      "name": "correct_progress",
+      "value": "correct progress"
+    },
+    {
+      "name": "entry_Tools",
+      "value": "entry_Tools"
+    },
+    {
+      "name": "tools_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "tools_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "login_name",
+      "value": "Input your name"
+    },
+    {
+      "name": "login_keycode",
+      "value": "Input your keycode"
+    },
+    {
+      "name": "login_button",
+      "value": "Login"
+    },
+    {
+      "name": "login_first",
+      "value": "Login First"
+    },
+    {
+      "name": "dataability_description",
+      "value": "hap sample empty provider"
     }
   ]
 }

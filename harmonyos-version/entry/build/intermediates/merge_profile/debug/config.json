@@ -1,11 +1,11 @@
 {
     "app": {
-        "bundleName": "com.application.easyteaching",
+        "bundleName": "com.application.easyteaching_harmony",
         "vendor": "application",
         "apiVersion": {
-            "compatible": 7,
-            "target": 7,
-            "releaseType": "Beta2"
+            "compatible": 6,
+            "target": 6,
+            "releaseType": "Release"
         },
         "version": {
             "code": 1000000,
@@ -18,7 +18,8 @@
     "module": {
         "name": ".MyApplication",
         "deviceType": [
-            "phone"
+            "phone",
+            "tablet"
         ],
         "distro": {
             "deliveryWithInstall": true,
@@ -28,7 +29,7 @@
         },
         "abilities": [
             {
-                "name": "com.application.easyteaching.MainAbility",
+                "name": "com.application.easyteaching_harmony.MainAbility",
                 "description": "$string:mainability_description",
                 "icon": "$media:icon",
                 "label": "$string:entry_MainAbility",
@@ -49,17 +50,45 @@
                 "homeAbility": true
             },
             {
-                "name": "com.application.easyteaching.slice.MainAbility_operation",
-                "description": "$string:mainability_operation_description",
+                "name": "com.application.easyteaching_harmony.Tools",
+                "description": "$string:tools_description",
                 "icon": "$media:icon",
-                "label": "$string:entry_MainAbility_operation",
+                "label": "$string:entry_Tools",
                 "type": "page",
                 "launchType": "standard",
                 "orientation": "unspecified",
                 "homeAbility": false
             }
         ],
-        "mainAbility": "com.application.easyteaching.MainAbility",
-        "package": "com.application.easyteaching"
+        "reqPermissions": [
+            {
+                "name": "ohos.permission.GET_WIFI_INFO",
+                "reason": "1",
+                "usedScene": {
+                    "ability": [
+                        "com.application.easyteaching_harmony.MainAbility"
+                    ],
+                    "when": "inuse"
+                }
+            },
+            {
+                "name": "ohos.permission.KEEP_BACKGROUND_RUNNING",
+                "reason": "2",
+                "usedScene": {
+                    "ability": [
+                        "com.application.easyteaching_harmony.MainAbility"
+                    ],
+                    "when": "always"
+                }
+            },
+            {
+                "name": "ohos.permission.READ_USER_STORAGE"
+            },
+            {
+                "name": "ohos.permission.WRITE_USER_STORAGE"
+            }
+        ],
+        "mainAbility": "com.application.easyteaching_harmony.MainAbility",
+        "package": "com.application.easyteaching_harmony"
     }
 }

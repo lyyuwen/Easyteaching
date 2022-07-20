@@ -3,16 +3,29 @@ apply plugin: 'com.huawei.ohos.app'
 
 //For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#section1112183053510
 ohos {
-    compileSdkVersion 7
+    signingConfigs {
+        debug {
+            storeFile file('G:\\.ohos\\auto_debug_easyteaching_harmony_260086000117195532.p12')
+            storePassword '00000018939AE581E9149155B6F5DE51C940D9C5C95413415C04689C855A87B87D9393CFB6F2D6B4'
+            keyAlias = 'debugKey'
+            keyPassword '000000187722AE08BDAA9AE868605BD97FD95C6DA51089A585B71D316D59F2197E71E338B80108E4'
+            signAlg = 'SHA256withECDSA'
+            profile file('G:\\.ohos\\auto_debug_easyteaching_harmony_260086000117195532.p7b')
+            certpath file('G:\\.ohos\\auto_debug_easyteaching_harmony_260086000117195532.cer')
+        }
+    }
+    compileSdkVersion 6
 }
-	
+
 buildscript {
     repositories {
         maven {
             url 'https://repo.huaweicloud.com/repository/maven/'
+            allowInsecureProtocol = true
         }
         maven {
             url 'https://developer.huawei.com/repo/'
+            allowInsecureProtocol = true
         }
     }
     dependencies {
@@ -25,9 +38,11 @@ allprojects {
     repositories {
         maven {
             url 'https://repo.huaweicloud.com/repository/maven/'
+            allowInsecureProtocol = true
         }
         maven {
             url 'https://developer.huawei.com/repo/'
+            allowInsecureProtocol = true
         }
     }
 }

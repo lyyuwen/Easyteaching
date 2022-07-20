@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.application.easyteaching",
+    "bundleName": "com.application.easyteaching_harmony",
     "vendor": "application",
     "version": {
       "code": 1000000,
@@ -9,11 +9,12 @@
   },
   "deviceConfig": {},
   "module": {
-    "package": "com.application.easyteaching",
+    "package": "com.application.easyteaching_harmony",
     "name": ".MyApplication",
-    "mainAbility": "com.application.easyteaching.MainAbility",
+    "mainAbility": "com.application.easyteaching_harmony.MainAbility",
     "deviceType": [
-      "phone"
+      "phone",
+      "tablet"
     ],
     "distro": {
       "deliveryWithInstall": true,
@@ -35,7 +36,7 @@
         ],
         "orientation": "unspecified",
         "visible": true,
-        "name": "com.application.easyteaching.MainAbility",
+        "name": "com.application.easyteaching_harmony.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
         "label": "$string:entry_MainAbility",
@@ -44,12 +45,38 @@
       },
       {
         "orientation": "unspecified",
-        "name": "com.application.easyteaching.slice.MainAbility_operation",
+        "name": "com.application.easyteaching_harmony.Tools",
         "icon": "$media:icon",
-        "description": "$string:mainability_operation_description",
-        "label": "$string:entry_MainAbility_operation",
+        "description": "$string:tools_description",
+        "label": "$string:entry_Tools",
         "type": "page",
         "launchType": "standard"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.GET_WIFI_INFO",
+        "reason": "1",
+        "usedScene":
+        {
+          "ability": ["com.application.easyteaching_harmony.MainAbility"],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.KEEP_BACKGROUND_RUNNING",
+        "reason": "2",
+        "usedScene":
+        {
+          "ability": ["com.application.easyteaching_harmony.MainAbility"],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.READ_USER_STORAGE"
+      },
+      {
+        "name": "ohos.permission.WRITE_USER_STORAGE"
       }
     ]
   }

@@ -4,55 +4,75 @@
     ohos:height="match_parent"
     ohos:width="match_parent"
     ohos:alignment="center"
-    ohos:orientation="vertical">
-
-    <Text
-        ohos:height="80vp"
-        ohos:width="160vp"
-        ohos:text="$string:Students_Situation"
-        />
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_ability_main">
 
     <DirectionalLayout
-        ohos:height="match_parent"
+        ohos:id="$+id:Main_Frame"
+        ohos:height="match_content"
         ohos:width="match_parent"
-        ohos:alignment="bottom|horizontal_center"
-        ohos:orientation="horizontal">
+        ohos:alignment="center"
+        ohos:orientation="vertical"
+        ohos:background_element="$graphic:background_ability_main">
+
+        <Text
+            ohos:height="50vp"
+            ohos:width="250vp"
+            ohos:text="$string:welcome"
+            ohos:text_size="20vp"/>
 
         <Button
-            ohos:id="$+id:first_page"
-            ohos:height="50vp"
-            ohos:width="50vp"
-            ohos:text="$string:First_Page"
-            ohos:text_size="20vp"
-            ohos:background_element="$graphic:background_ability_main_model"
-            />
+            ohos:id="$+id:Login_First"
+            ohos:height="45vp"
+            ohos:width="160vp"
+            ohos:text="$string:login_first"
+            ohos:text_size="30vp"
+            ohos:layout_alignment="horizontal_center"/>
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="65vp"
+        ohos:width="match_parent"
+        ohos:alignment="horizontal_center|bottom"
+        ohos:orientation="horizontal"
+        ohos:background_element="$graphic:background_ability_main_operate">
 
         <Button
-            ohos:id="$+id:operation_page"
-            ohos:height="50vp"
-            ohos:width="50vp"
-            ohos:text="$string:Operation_Page"
-            ohos:text_size="20vp"
-            ohos:background_element="$graphic:background_ability_main_model"
-            />
+            ohos:id="$+id:First_page"
+            ohos:text="$string:first_page"
+            ohos:text_color="#FF000000"
+            ohos:text_size="15vp"
+            ohos:height="60vp"
+            ohos:width="95vp"
+            ohos:element_top="$media:ic_public_home108"/>
 
         <Button
-            ohos:id="$+id:history_page"
-            ohos:height="50vp"
-            ohos:width="50vp"
-            ohos:text="$string:History_Page"
-            ohos:text_size="20vp"
-            ohos:background_element="$graphic:background_ability_main_model"
-            />
+            ohos:id="$+id:Operate_page"
+            ohos:text="$string:operate_page"
+            ohos:text_color="#FF000000"
+            ohos:text_size="15vp"
+            ohos:height="60vp"
+            ohos:width="95vp"
+            ohos:element_top="$media:ic_public_quickstart108"/>
 
         <Button
-            ohos:id="$+id:mine_page"
-            ohos:height="50vp"
-            ohos:width="50vp"
-            ohos:text="$string:Mine_Page"
-            ohos:text_size="20vp"
-            ohos:background_element="$graphic:background_ability_main_model"
-            />
+            ohos:id="$+id:History_page"
+            ohos:text="$string:history_page"
+            ohos:text_color="#FF000000"
+            ohos:text_size="15vp"
+            ohos:height="60vp"
+            ohos:width="95vp"
+            ohos:element_top="$media:ic_public_history108"/>
+
+        <Button
+            ohos:id="$+id:Mine_page"
+            ohos:text="$string:mine_page"
+            ohos:text_color="#FF000000"
+            ohos:text_size="15vp"
+            ohos:height="60vp"
+            ohos:width="95vp"
+            ohos:element_top="$media:ic_public_contacts108"/>
 
     </DirectionalLayout>
 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_ability_main">
+
+    <DirectionalLayout
+        ohos:id="$+id:History_Frame"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:alignment="center"
+        ohos:orientation="vertical"
+        ohos:background_element="$graphic:background_ability_main">
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="$string:welcome"
+            ohos:text_size="30vp"/>
+
+    </DirectionalLayout>
+
+</DirectionalLayout>

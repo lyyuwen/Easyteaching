@@ -9,36 +9,104 @@
       "value": "Java_Empty Ability"
     },
     {
-      "name": "First_Page",
-      "value": "首页"
+      "name": "welcome",
+      "value": "你好！欢迎来到简·教·学！"
     },
     {
-      "name": "Operation_Page",
-      "value": "操作"
-    },
-    {
-      "name": "History_Page",
-      "value": "历史"
-    },
-    {
-      "name": "Mine_Page",
-      "value": "我的"
-    },
-    {
-      "name": "entry_MainAbility_operation",
-      "value": "entry_MainAbility_operation"
-    },
-    {
-      "name": "mainability_operation_description",
-      "value": "Java_Empty Ability"
-    },
-    {
-      "name": "mainability_operation_HelloWorld",
+      "name": "mainability_HelloWorld",
       "value": "你好，世界"
     },
     {
-      "name": "Students_Situation",
-      "value": "学生情况"
+      "name": "first_page",
+      "value": "首页"
+    },
+    {
+      "name": "operate_page",
+      "value": "操作"
+    },
+    {
+      "name": "history_page",
+      "value": "历史"
+    },
+    {
+      "name": "mine_page",
+      "value": "我的"
+    },
+    {
+      "name": "add_student",
+      "value": "添加"
+    },
+    {
+      "name": "del_student",
+      "value": "删除"
+    },
+    {
+      "name": "edit_student",
+      "value": "修改"
+    },
+    {
+      "name": "view_student",
+      "value": "查看"
+    },
+    {
+      "name": "tip_for_students_information_button",
+      "value": "学生信息"
+    },
+    {
+      "name": "tip_for_work_button",
+      "value": "工作"
+    },
+    {
+      "name": "give_out_work",
+      "value": "布置任务"
+    },
+    {
+      "name": "upload_answers",
+      "value": "上传答案"
+    },
+    {
+      "name": "upload_work",
+      "value": "提交任务"
+    },
+    {
+      "name": "edit_answers",
+      "value": "修改答案"
+    },
+    {
+      "name": "correct_progress",
+      "value": "批改进度"
+    },
+    {
+      "name": "entry_Tools",
+      "value": "entry_Tools"
+    },
+    {
+      "name": "tools_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "tools_HelloWorld",
+      "value": "你好，世界"
+    },
+    {
+      "name": "login_name",
+      "value": "请输入你的账号名"
+    },
+    {
+      "name": "login_keycode",
+      "value": "请输入你的密码"
+    },
+    {
+      "name": "login_button",
+      "value": "登录"
+    },
+    {
+      "name": "login_first",
+      "value": "请先登录"
+    },
+    {
+      "name": "dataability_description",
+      "value": "hap sample empty provider"
     }
   ]
 }

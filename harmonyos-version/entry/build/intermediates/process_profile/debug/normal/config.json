@@ -1,12 +1,12 @@
 {
     "app": {
         "apiVersion": {
-            "compatible": 7,
-            "releaseType": "Beta2",
-            "target": 7
+            "compatible": 6,
+            "releaseType": "Release",
+            "target": 6
         },
         "vendor": "application",
-        "bundleName": "com.application.easyteaching",
+        "bundleName": "com.application.easyteaching_harmony",
         "version": {
             "code": 1000000,
             "name": "1.0.0"
@@ -17,7 +17,8 @@
     },
     "module": {
         "deviceType": [
-            "phone"
+            "phone",
+            "tablet"
         ],
         "abilities": [
             {
@@ -33,7 +34,7 @@
                 ],
                 "orientation": "unspecified",
                 "visible": true,
-                "name": "com.application.easyteaching.MainAbility",
+                "name": "com.application.easyteaching_harmony.MainAbility",
                 "icon": "$media:icon",
                 "description": "$string:mainability_description",
                 "label": "$string:entry_MainAbility",
@@ -43,23 +44,51 @@
             },
             {
                 "orientation": "unspecified",
-                "name": "com.application.easyteaching.slice.MainAbility_operation",
+                "name": "com.application.easyteaching_harmony.Tools",
                 "icon": "$media:icon",
-                "description": "$string:mainability_operation_description",
-                "label": "$string:entry_MainAbility_operation",
+                "description": "$string:tools_description",
+                "label": "$string:entry_Tools",
                 "type": "page",
                 "launchType": "standard",
                 "homeAbility": false
             }
         ],
-        "mainAbility": "com.application.easyteaching.MainAbility",
+        "mainAbility": "com.application.easyteaching_harmony.MainAbility",
         "distro": {
             "moduleType": "entry",
             "installationFree": false,
             "deliveryWithInstall": true,
             "moduleName": "entry"
         },
-        "package": "com.application.easyteaching",
-        "name": ".MyApplication"
+        "package": "com.application.easyteaching_harmony",
+        "name": ".MyApplication",
+        "reqPermissions": [
+            {
+                "reason": "1",
+                "usedScene": {
+                    "ability": [
+                        "com.application.easyteaching_harmony.MainAbility"
+                    ],
+                    "when": "inuse"
+                },
+                "name": "ohos.permission.GET_WIFI_INFO"
+            },
+            {
+                "reason": "2",
+                "usedScene": {
+                    "ability": [
+                        "com.application.easyteaching_harmony.MainAbility"
+                    ],
+                    "when": "always"
+                },
+                "name": "ohos.permission.KEEP_BACKGROUND_RUNNING"
+            },
+            {
+                "name": "ohos.permission.READ_USER_STORAGE"
+            },
+            {
+                "name": "ohos.permission.WRITE_USER_STORAGE"
+            }
+        ]
     }
 }

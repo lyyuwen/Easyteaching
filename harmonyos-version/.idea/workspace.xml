@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c700f88d-f025-482a-8285-7c2242bdc519" name="Changes" comment="news" />
+    <list default="true" id="9de68fd6-3915-4761-beb2-93b54e9b72af" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,45 +20,53 @@
       <list>
         <option value="HosGraphicResourceFile" />
         <option value="HosLayoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/entry/src/main/resources/zh/element/string.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/entry/src/main/resources/en/element/string.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/entry/src/main/java/com/application/easyteaching/MainAbility.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/entry/src/main/resources/base/element/string.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/entry/src/main/resources/base/layout/ability_main.xml" root0="FORCE_HIGHLIGHTING" />
+  <component name="HiLogFilter">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
   </component>
-  <component name="ProjectId" id="26v4WHysR5frKlSGIbOtp2iqd2U" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2BI45vS6FoTwFmaIza5L9UCjocA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SAVED_PROJECT_CPP_SUPPORT" value="non-cpp" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="auto_debug_bundleName" value="000000247456C44F2BF411FF8A5846C46B3747D60E042774A1BD80CA4336FE43CA318D4D06A590D9D018F8F81DE4B26FC7F8FFE1" />
+    <property name="auto_debug_cert_list" value="00000022BDB22D13420BE5DC7CBF26AD8837A45EB4D75ADEDDE4ABE7A450470376306698C9C2148D9641FA45A4D20C793DED" />
+    <property name="auto_debug_device_list" value="000000229259E136F9B4F36E61EC7981D78546EAB1634008AFD472AFC94BEE6A33F95721B787C0E1ED447CB4F7858F6C64B2" />
+    <property name="auto_debug_package_name" value="000000242D1047200C044F2D8D51C3088F8C39C7ED8A275FDF192F1B116FE355E9A72428C975B39474A26B7F0A7994D509644FF1" />
+    <property name="auto_debug_team_id" value="0000002230B53024ADD4F1B2F9D8F3F0A9880FA0715C4280982C3D01BE973366A790EBBE1C9CADFCAB065558FB329F791F38" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.ide.version" value="3.0.0.803" />
-    <property name="project.structure.select" value="SDK Location" />
+    <property name="project.structure.select" value="Project" />
     <property name="settings.editor.selected.configurable" value="SdkWebView" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\computer_program\any\Easyteaching_harmony\entry\src\main\resources\base\media\originally" />
+      <recent name="E:\computer_program\Easyteaching_harmony\entry\src\main\resources\base\media" />
+    </key>
     <key name="ohos.template.packageName">
-      <recent name="com.application.easyteaching.slice" />
-      <recent name="com.application.easyteaching" />
+      <recent name="com.application.easyteaching_harmony" />
     </key>
   </component>
   <component name="RunManager" selected="HarmonyOS App.entry">
-    <configuration name="entry" type="HosDebugTask" factoryName="HarmonyOS App">
+    <configuration name="entry" type="HosDebugTask" factoryName="HarmonyOS App" activateToolWindowBeforeRun="false">
       <module name="entry" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -93,27 +101,11 @@
         <option name="Ohos.Build.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Super App" type="OhosSuperAppDebugTask" factoryName="HarmonyOS Super App">
+    <configuration name="Super App" type="OhosSuperAppDebugTask" factoryName="HarmonyOS Super App" activateToolWindowBeforeRun="false">
       <method v="2">
         <option name="Ohos.Build.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="news" />
-    <option name="LAST_COMMIT_MESSAGE" value="news" />
-  </component>
 </project>
